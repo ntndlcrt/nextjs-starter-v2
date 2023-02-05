@@ -1,4 +1,3 @@
-import Button, { buttonPropsType } from './Button'
-
+import Button, { buttonPropsType } from './button'
 export default Button
 export type { buttonPropsType }

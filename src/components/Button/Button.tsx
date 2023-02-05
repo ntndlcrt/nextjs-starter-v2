@@ -1,18 +1,21 @@
-import styles from './Button.module.scss'
+import React from 'react'
+import styles from './button.module.scss'
 
-export type buttonPropsType = {
+interface props {
 	children: React.ReactNode
 	className?: string
 	onClick?: () => void
-	type?: 'button' | 'submit' | 'reset'
+	type?: 'button' | 'submit' | 'reset' | undefined
 }
+
+export type buttonPropsType = props
 
 export default function Button({
 	children,
 	className,
 	onClick,
 	type = 'button'
-}: buttonPropsType) {
+}: props) {
 	return (
 		<button
 			className={`${className ?? ''} ${styles.button}`}

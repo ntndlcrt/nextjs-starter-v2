@@ -1,6 +1,6 @@
 'use client'
 
-import Button, { buttonPropsType } from '@/components/Button'
+import Button, { buttonPropsType } from '@/components/button'
 
 const buttonProps: buttonPropsType = {
 	children: 'Click me',
@@ -11,7 +11,9 @@ const buttonProps: buttonPropsType = {
 export default function Home() {
 	return (
 		<div>
-			<h1>Nextjs starter by Antoine Delcourte</h1>
+			<h1 className="text-[6.4rem] uppercase font-extrabold">
+				Nextjs starter by Antoine Delcourte
+			</h1>
 			<Button {...buttonProps} />
 		</div>
 	)
